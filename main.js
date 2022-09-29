@@ -19,7 +19,7 @@ const createWindow = () => {
       height: 600
     })
   
-    win.loadFile('app/index.ejs')
+    win.loadFile('app/pages/authentication/login.ejs')
     win.webContents.openDevTools();
   }
 
