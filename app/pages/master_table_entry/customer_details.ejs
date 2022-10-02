@@ -13,6 +13,20 @@
 
     <!-- Ekko Lightbox -->
     <link rel="stylesheet" href="../../plugins/ekko-lightbox/ekko-lightbox.css">
+    <style>
+      fieldset.scheduler-border {
+        border: 1px groove #ddd !important;
+        padding: 0 1.4em 1.4em 1.4em !important;
+        margin: 0 0 1.5em 0 !important;
+        -webkit-box-shadow:  0px 0px 0px 0px #000;
+        box-shadow:  0px 0px 0px 0px #000;
+      }
+      legend.scheduler-border {
+        width:inherit; /* Or auto */
+        padding:0 4px; /* To give a bit of padding on the left and right */
+        border-bottom:none;
+    } 
+    </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -47,15 +61,15 @@
               <button class="btn btn-primary float-right" data-toggle="modal" data-target="#user-modal-form"></i> Add Customer</button>
             </div>
           </div>
-          <div class="row">
+          <div class="row mt-1">
             <div class="col-12">
-              <div class="card">
-                <div class="card-header">
+              <div class="card border border-dark">
+                <div class="card-header border-dark">
                   <h3 class="card-title">DataTable with minimal features & hover style</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                  <table id="example2" class="table table-bordered table-hover">
+                  <table id="example2" class="table table-hover">
                     <thead>
                     <tr>
                       <th>Rendering engine</th>
@@ -507,110 +521,125 @@
               <div class="modal-body">
                 <form action="" class="">
                   <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <label for="full_name" class="col-sm col-form-label col-form-label-sm">Full Name *</label>
                     <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                      <input type="text" class="form-control form-control-sm" id="full_name" placeholder="Enter Customer Name" required>
                     </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <label for="contact" class="col-sm col-form-label col-form-label-sm">Contact *</label>
                     <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                      <input type="number" class="form-control form-control-sm" id="contact" placeholder="Contact" required>
                     </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <label for="email" class="col-sm col-form-label col-form-label-sm">Email *</label>
                     <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                      <input type="email" class="form-control form-control-sm" id="email" placeholder="Email" required>
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <label for="address" class="col-sm col-form-label col-form-label-sm">Billing Address</label>
                     <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                      <input type="text" class="form-control form-control-sm" id="address" placeholder="Address">
                     </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <label for="city" class="col-sm col-form-label col-form-label-sm">City</label>
                     <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                      <input type="text" class="form-control form-control-sm" id="city" placeholder="City">
                     </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <label for="state" class="col-sm col-form-label col-form-label-sm">State</label>
                     <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                      <input type="text" class="form-control form-control-sm" id="state" placeholder="State">
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <label for="pincode" class="col-sm-1 col-form-label col-form-label-sm">Pincode</label>
+                    <div class="col-sm-3">
+                      <input type="number" class="form-control form-control-sm" id="pincode" placeholder="Pincode">
+                    </div>
+                    <label for="country" class="col-sm-1 col-form-label col-form-label-sm">Country</label>
+                    <div class="col-sm-3">
+                      <input type="text" value="India" class="form-control form-control-sm" id="country" placeholder="Country">
+                    </div>
+                    <!-- <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
                     <div class="col-sm-3">
                       <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
+                    </div> -->
                   </div>
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
-                    <div class="col-sm-3">
-                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
-                    </div>
-                  </div>
-                  
-                </form>
-              </div>
+                  <!-- ./Customer Personal Detail -->
 
-              <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                  <div class="form-group row">
+                    <label for="pan" class="col-sm col-form-label col-form-label-sm">Pan No. *</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control form-control-sm" id="pan" placeholder="Pan No" required>
+                    </div>
+                    <label for="gst" class="col-sm col-form-label col-form-label-sm">GST</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control form-control-sm" id="gst" placeholder="GST No.">
+                    </div>
+                    <!-- <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <div class="col-sm-3">
+                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                    </div> -->
+                  </div>
+                  <!-- ./Customer Tax Details -->
+
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Type</label>
+                    <div class="form-check form-check-inline col-sm">
+                      <input class="form-check-input" type="radio" name="type_balance" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Debit</label>
+                    </div>
+                    <div class="form-check form-check-inline col-sm ">
+                      <input class="form-check-input" type="radio" name="type_balance" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">credit</label>
+                    </div>
+                    <label for="opening_balance" class="col-sm col-form-label col-form-label-sm">Opening Balance</label>
+                    <div class="col-sm-4">
+                      <input type="number" class="form-control form-control-sm" id="open_balance" placeholder="Opening Balance">
+                    </div>
+                    <label for="remark" class="col-sm col-form-label col-form-label-sm">Remark</label>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control form-control-sm" id="remark" placeholder="Remark">
+                    </div>
+                  </div>
+                  <!-- ./Account Detail -->
+                  
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Credit Allowed</label>
+                    <div class="form-check form-check-inline col-sm">
+                      <input class="form-check-input" type="radio" name="credit_limit_amt" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline col-sm ">
+                      <input class="form-check-input" type="radio" name="credit_limit_amt" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div>
+                    <label for="credit_limit_amt" class="col-sm col-form-label col-form-label-sm">Credit Limit Amount</label>
+                    <div class="col-sm-4">
+                      <input type="number" class="form-control form-control-sm" id="credit_limit_amt" placeholder="Credit Limit Amount">
+                    </div>
+                    <label for="remark" class="col-sm col-form-label col-form-label-sm">Remark</label>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control form-control-sm" id="remark" placeholder="Remark">
+                    </div>
+                  </div>
+                  <!-- ./Other details -->
+                  <!-- <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <div class="col-sm-3">
+                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                    </div>
+                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <div class="col-sm-3">
+                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                    </div>
+                    <label for="inputEmail3" class="col-sm col-form-label col-form-label-sm">Email</label>
+                    <div class="col-sm-3">
+                      <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div> -->
+                  <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
+                </form>
               </div>
             </div>
             <!-- /.modal-content -->
@@ -658,7 +687,7 @@
         $('#example2').DataTable({
             "paging": true,
             "lengthChange": false,
-            "searching": false,
+            "searching": true,
             "ordering": true,
             "info": true,
             "autoWidth": true,
@@ -680,19 +709,8 @@
           $('.btn[data-filter]').removeClass('active');
           $(this).addClass('active');
         });
-      })
-
-      $('#model-form').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
+      });
       
     </script>
-
 </body>
 </html>
